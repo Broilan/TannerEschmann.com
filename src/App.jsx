@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import { Education, InfoCard, Toggle, Work, Navbar } from "./components";
+import { Education, InfoCard, Toggle, Work, Projects } from "./components";
 
 function App() {
   const [selectedSection, setSelectedSection] = useState("Work");
 
   return (
-    <div className="w-screen h-screen bg-gray-950 text-white flex flex-col items-center relative">
-      <Navbar />
+    <div className="w-screen h-screen bg-gray-950 text-white flex flex-col items-center relative overflow-y-auto hide-scrollbar">
       {/* Content */}
       <div className="relative w-half max-w-4xl px-4 py-10">
         {/* Info Card */}
@@ -14,7 +13,7 @@ function App() {
 
         {/* Toggle Tabs */}
         <Toggle
-          options={["Work", "Education"]}
+          options={["Work", "Education", "Projects"]}
           selected={selectedSection}
           onChange={setSelectedSection}
         />
@@ -23,6 +22,7 @@ function App() {
         <div>
           {selectedSection === "Work" && <Work />}
           {selectedSection === "Education" && <Education />}
+          {selectedSection === "Projects" && <Projects />}
         </div>
       </div>
     </div>

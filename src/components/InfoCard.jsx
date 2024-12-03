@@ -23,6 +23,7 @@ export default function InfoCard() {
           </a>
           <div className="flex gap-3 text-gray-400">
             <a
+              target="_blank"
               href="https://www.linkedin.com/in/tanner-eschmann/"
               aria-label="LinkedIn"
               className="hover:text-white"
@@ -30,6 +31,7 @@ export default function InfoCard() {
               <Linkedin />
             </a>
             <a
+              target="_blank"
               href="https://github.com/Broilan"
               aria-label="GitHub"
               className="hover:text-white"
