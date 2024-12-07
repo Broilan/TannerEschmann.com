@@ -14,7 +14,7 @@ function App() {
 
         {/* Toggle Tabs */}
         <Toggle
-          options={["Work", "Education", "Projects", "Tools"]}
+          options={["Work", "Education", "Projects"]}
           selected={selectedSection}
           onChange={setSelectedSection}
         />
@@ -24,7 +24,7 @@ function App() {
           {selectedSection === "Work" && <Work />}
           {selectedSection === "Education" && <Education />}
           {selectedSection === "Projects" && <Projects />}
-          {selectedSection === "Tools" && <Tools />}
+          {/* {selectedSection === "Tools" && <Tools />} */}
         </div>
       </div>
     </div>
