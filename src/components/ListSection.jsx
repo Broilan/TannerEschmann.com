@@ -7,16 +7,18 @@ export default function ListSection({ data }) {
   // Update the height of the content dynamically
   useEffect(() => {
     if (contentRef.current) {
-      setContentHeight(contentRef.current.scrollHeight); // Total height of the scrollable content
+      setContentHeight(contentRef.current.scrollHeight);
     }
-  }, [data]); // Recalculate when data changes
+  }, [data]);
 
   return (
-    <div className="bg-gray-950 rounded-lg p-6 mt-4 border-[1px] border-gray-800 relative max-h-[30rem] overflow-y-auto hide-scrollbar">
+    <div
+      className="bg-gray-950 rounded-lg p-6 mt-4 border border-gray-800 relative max-h-[30rem] overflow-y-auto hide-scrollbar w-full"
+    >
       {/* Vertical Line */}
       <div
         className="absolute top-0 left-[46px] w-[0.5px] bg-gray-400"
-        style={{ height: `${contentHeight+45}px` }}
+        style={{ height: `${contentHeight + 45}px` }}
       ></div>
 
       {/* Content */}
@@ -31,8 +33,6 @@ export default function ListSection({ data }) {
 
 function CompanyItem({ company }) {
   const [loaded, setLoaded] = useState(false);
-
-  // Determine if the company object contains roles
   const hasRoles = Array.isArray(company.roles);
 
   return (
@@ -53,10 +53,9 @@ function CompanyItem({ company }) {
           } transition-opacity duration-300`}
         />
       </div>
-      <div>
-        {/* Handle companies with roles */}
+      <div className="flex-1">
         {hasRoles ? (
-          <>
+          <div>
             <strong className="text-lg">{company.company}</strong>
             <ul className="space-y-4 mt-2">
               {company.roles.map((role, index) => (
@@ -75,10 +74,9 @@ function CompanyItem({ company }) {
                 </li>
               ))}
             </ul>
-          </>
+          </div>
         ) : (
-          // Handle items without roles (like projects or education)
-          <>
+          <div>
             <strong className="text-lg">{company.title}</strong>
             {company.subtitle && (
               <div className="text-gray-300 text-sm">{company.subtitle}</div>
@@ -91,10 +89,9 @@ function CompanyItem({ company }) {
                 <li key={i}>{detail}</li>
               ))}
             </ul>
-          </>
+          </div>
         )}
       </div>
     </li>
   );
 }
-
