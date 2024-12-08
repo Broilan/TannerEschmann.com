@@ -6,7 +6,7 @@ import { Home, Blog, About } from "./pages";
 export default function App() {
   return (
     <Router>
-      <div className="w-screen h-screen font-mono bg-gray-100 dark:bg-gray-950 text-black dark:text-gray-200 overflow-y-auto hide-scrollbar">
+      <div className="w-screen h-screen font-serif bg-gray-100 dark:bg-gray-950 text-black dark:text-gray-200 overflow-y-auto hide-scrollbar">
         {/* Navbar remains fixed across pages */}
         <Navbar />
 
