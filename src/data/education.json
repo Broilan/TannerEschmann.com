@@ -1,0 +1,26 @@
+[
+  {
+    "image": "/IRSC.jpg",
+    "alt": "Indian River State College",
+    "title": "Indian River State College",
+    "subtitle": "Associate of Arts in Engineering",
+    "date": "2021 - 2025",
+    "details": [
+      "Gained foundational knowledge in engineering principles.",
+      "Participated in collaborative team projects.",
+      "Achieved Dean's List recognition for academic excellence."
+    ]
+  },
+  {
+    "image": "/GA.png",
+    "alt": "General Assembly",
+    "title": "General Assembly",
+    "subtitle": "Software Engineering Program",
+    "date": "May 2022 - Dec 2022",
+    "details": [
+      "Learned full-stack software engineering concepts.",
+      "Built and deployed multiple capstone projects.",
+      "Collaborated in agile teams to develop applications."
+    ]
+  }
+]

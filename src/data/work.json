@@ -1,0 +1,38 @@
+[
+  {
+    "image": "/TutorCom.jpg",
+    "alt": "Tutor.com",
+    "title": "Tutor.com",
+    "subtitle": "Computer Science Tutor",
+    "date": "12/03/2024 - Present",
+    "details": [
+      "Assisted students with challenging computer science problems.",
+      "Developed personalized learning strategies for diverse learners.",
+      "Achieved high student satisfaction ratings."
+    ]
+  },
+  {
+    "image": "/cognimetrics.png",
+    "alt": "Cognimetrics",
+    "title": "Cognimetrics",
+    "subtitle": "Web Developer",
+    "date": "Dec 2022 - Present",
+    "details": [
+      "Built and maintained a web application for psychometric analysis.",
+      "Collaborated with a cross-functional team to design UI/UX features.",
+      "Optimized codebase to enhance application performance."
+    ]
+  },
+  {
+    "image": "/IRE.png",
+    "alt": "Indian River Estates",
+    "title": "Indian River Estates",
+    "subtitle": "Line Cook",
+    "date": "Aug 2021 - Aug 2022",
+    "details": [
+      "Prepared high-quality meals for residents.",
+      "Maintained a clean and efficient kitchen environment.",
+      "Collaborated with team members to meet service deadlines."
+    ]
+  }
+]

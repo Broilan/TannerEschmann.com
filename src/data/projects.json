@@ -1,0 +1,35 @@
+[
+  {
+    "image": "/cognimetrics.png",
+    "alt": "Cognimetrics",
+    "title": "Psychopedia",
+    "subtitle": "Psychometrics Wiki",
+    "details": [
+      "Psychometrics wiki designed for educational purposes.",
+      "Aims to democratize access to psychometric knowledge.",
+      "Includes interactive features for data visualization and analysis."
+    ]
+  },
+  {
+    "image": "/cognimetrics.png",
+    "alt": "Psychometric",
+    "title": "Psychometric",
+    "subtitle": "Psychometrics Library",
+    "details": [
+      "NPM library designed for use by Psychometricians, Psychologists, and others.",
+      "Incorporates various psychometric formulae for streamlined workflows.",
+      "Supports modern JavaScript frameworks with TypeScript compatibility."
+    ]
+  },
+  {
+    "image": "/Better.png",
+    "alt": "BetterJS",
+    "title": "BetterJS",
+    "subtitle": "JavaScript Library",
+    "details": [
+      "NPM library extending JavaScript's native prototypes.",
+      "Provides utility methods to simplify complex operations.",
+      "Ensures compatibility with ES6+ standards."
+    ]
+  }
+]
