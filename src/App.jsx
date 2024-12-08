@@ -1,31 +1,26 @@
-import React, { useState } from "react";
-import { InfoCard, Toggle, ListSection } from "./components";
-import { workData, educationData, projectsData } from "./data";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Navbar } from "./components";
+import { Home, Blog, About } from "./pages";
 
-function App() {
-  const [selectedSection, setSelectedSection] = useState("Work");
-
+export default function App() {
   return (
-    <div className="w-screen h-screen bg-gray-950 text-white overflow-y-auto hide-scrollbar">
-      {/* This container will hold everything centered */}
-      {/* At desktop (≥1024px): width is 1/3, centered. Below that, full width. */}
-      <div className="relative w-full h-full flex flex-col items-center">
-        <div className="w-full lg:w-1/3 mx-auto px-4 py-10 flex flex-col space-y-4">
-          <InfoCard />
+    <Router>
+      <div className="w-screen h-screen font-mono bg-gray-100 dark:bg-gray-950 text-black dark:text-gray-200 overflow-y-auto hide-scrollbar">
+        {/* Navbar remains fixed across pages */}
+        <Navbar />
 
-          <Toggle
-            options={["Work", "Education", "Projects"]}
-            selected={selectedSection}
-            onChange={setSelectedSection}
-          />
-
-          {selectedSection === "Work" && <ListSection data={workData} />}
-          {selectedSection === "Education" && <ListSection data={educationData} />}
-          {selectedSection === "Projects" && <ListSection data={projectsData} />}
+        {/* Route-based Content */}
+        <div className="relative w-full flex flex-col items-center mt-12">
+          <div className="w-full lg:w-1/3 mx-auto px-4 py-10 flex flex-col space-y-4">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/about" element={<About />} />
+            </Routes>
+          </div>
         </div>
       </div>
-    </div>
+    </Router>
   );
 }
-
-export default App;

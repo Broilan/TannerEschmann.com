@@ -4,7 +4,6 @@ export default function ListSection({ data }) {
   const [contentHeight, setContentHeight] = useState(0);
   const contentRef = useRef(null);
 
-  // Update the height of the content dynamically
   useEffect(() => {
     if (contentRef.current) {
       setContentHeight(contentRef.current.scrollHeight);
@@ -12,9 +11,7 @@ export default function ListSection({ data }) {
   }, [data]);
 
   return (
-    <div
-      className="bg-gray-950 rounded-lg p-6 mt-4 border border-gray-800 relative max-h-[30rem] overflow-y-auto hide-scrollbar w-full"
-    >
+    <div className="bg-gray-100 text-black dark:text-white dark:bg-gray-950 rounded-lg p-6 mt-4 border border-gray-300 dark:border-gray-800 relative max-h-[30rem] overflow-y-auto hide-scrollbar w-full">
       {/* Vertical Line */}
       <div
         className="absolute top-0 left-[46px] w-[0.5px] bg-gray-400"
@@ -60,13 +57,13 @@ function CompanyItem({ company }) {
             <ul className="space-y-4 mt-2">
               {company.roles.map((role, index) => (
                 <li key={index}>
-                  <div className="text-gray-400 text-sm">
+                  <div className="text-black dark:text-gray-400 text-sm">
                     <strong>{role.title}</strong> {role.date && `- ${role.date}`}
                   </div>
                   {role.subtitle && (
-                    <div className="text-gray-300 text-sm">{role.subtitle}</div>
+                    <div className="text-black dark:text-gray-300 text-sm">{role.subtitle}</div>
                   )}
-                  <ul className="text-gray-300 text-sm list-disc ml-6 mt-1">
+                  <ul className="text-black dark:text-gray-300 text-sm list-disc ml-6 mt-1">
                     {role.details.map((detail, i) => (
                       <li key={i}>{detail}</li>
                     ))}
@@ -79,12 +76,12 @@ function CompanyItem({ company }) {
           <div>
             <strong className="text-lg">{company.title}</strong>
             {company.subtitle && (
-              <div className="text-gray-300 text-sm">{company.subtitle}</div>
+              <div className="text-black dark:text-gray-300 text-sm">{company.subtitle}</div>
             )}
             {company.date && (
-              <p className="text-gray-400 text-sm">{company.date}</p>
+              <p className="text-black dark:text-gray-400 text-sm">{company.date}</p>
             )}
-            <ul className="text-gray-300 text-sm list-disc ml-6 mt-1">
+            <ul className="text-black dark:text-gray-300 text-sm list-disc ml-6 mt-1">
               {company.details.map((detail, i) => (
                 <li key={i}>{detail}</li>
               ))}
