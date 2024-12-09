@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components";
-import { Home, Blog } from "./pages";
+import { Home, Blog, BlogPost } from "./pages";
 
 export default function App() {
   return (
@@ -16,6 +16,7 @@ export default function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/blog" element={<Blog />} />
+              <Route path="/blog/:name" element={<BlogPost />} />
             </Routes>
           </div>
         </div>
