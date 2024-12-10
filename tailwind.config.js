@@ -6,16 +6,16 @@ export default {
   ],
   theme: {
     fontFamily: {
-      // System default sans-serif fonts
-      'sans': ['ui-sans-serif', 'system-ui', 'Roboto', 'Helvetica', 'Arial', 'sans-serif'],
-      // Serif fonts including Times New Roman
-      'serif': ['Times New Roman', 'ui-serif', 'Georgia', 'Cambria', 'serif'],
-      // Monospace fonts for coding/console style
-      'mono': ['ui-monospace', 'SFMono-Regular', 'Courier New', 'monospace'],
-      // Display fonts for headlines or emphasis
-      'display': ['Oswald', 'Merriweather', 'Poppins', 'sans-serif'],
-      // Body fonts for general text
-      'body': ['"Open Sans"', 'Lora', 'Inter', 'sans-serif'],
+      // Clean and modern sans-serif
+      'sans': ['Inter', 'DM Sans', 'Poppins', 'Open Sans', 'sans-serif'],
+      // Elegant and classic serif
+      'serif': ['Playfair Display', 'Merriweather', 'Lora', 'Libre Baskerville', 'serif'],
+      // Bold and decorative cursive
+      'cursive': ['Lobster', 'Dancing Script', 'Pacifico', 'Great Vibes', 'cursive'],
+      // Minimal and sophisticated
+      'display': ['Raleway', 'Bebas Neue', 'Archivo', 'Kanit', 'sans-serif'],
+      // Mono fonts for code
+      'mono': ['Fira Code', 'Courier New', 'monospace'],
     },
     extend: {
       colors: {
