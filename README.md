@@ -11,7 +11,6 @@ This portfolio is built using the following technologies:
 ---
 
 ## Installation
-x
 To run this project locally, follow these steps:
 
 1. Clone the repository:
