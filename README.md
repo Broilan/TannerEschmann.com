@@ -43,7 +43,7 @@ To run this project locally, follow these steps:
 ## Contact
 
 If you have any questions or would like to collaborate, feel free to reach out to me:
-
+- **Site**: [bytanner.com](https://bytanner.com/)
 - **Email**: eschmanntanner@gmail.com
 - **LinkedIn**: [linkedin.com/in/tanner-eschmann](https://www.linkedin.com/in/tanner-eschmann/)
 - **GitHub**: [github.com/Broilan](https://github.com/Broilan)
